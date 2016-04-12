@@ -2,8 +2,6 @@ export class Loading extends Phaser.State {
     ready: boolean = false;
 
     loadingText: Phaser.Text;
-    loadingBarBg: Phaser.Sprite;
-    loadingBar: Phaser.Sprite;
 
     create() {
         let fontStyle = {
@@ -11,18 +9,18 @@ export class Loading extends Phaser.State {
             fill: '#7edcfc'
         };
 
-        this.loadingBarBg = this.game.add.sprite(this.game.world.centerX,
-                                                 this.game.world.centerY,
-                                                 'loadingBarBg');
-        this.loadingBarBg.tint = 0x7edcfc; // Same blue as text
-        this.loadingBarBg.anchor.setTo(0.5);
+        let loadingBarBg = this.game.add.sprite(this.game.world.centerX,
+                                                this.game.world.centerY,
+                                                'loadingBarBg');
+        loadingBarBg.tint = 0x7edcfc; // Same blue as text
+        loadingBarBg.anchor.setTo(0.5);
 
-        this.loadingBar = this.game.add.sprite(this.game.world.centerX - 175,
-                                               this.game.world.centerY - 16,
-                                               'loadingBar');
-        this.loadingBar.tint = 0xdcfc7e; // A contrasting green
+        let loadingBar = this.game.add.sprite(this.game.world.centerX - 175,
+                                              this.game.world.centerY - 16,
+                                              'loadingBar');
+        loadingBar.tint = 0xdcfc7e; // A contrasting green
 
-        this.load.setPreloadSprite(this.loadingBar);
+        this.load.setPreloadSprite(loadingBar);
 
         this.loadingText = this.add.text(this.world.centerX,
                                          this.world.centerY - 30,
