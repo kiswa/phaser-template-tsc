@@ -18,4 +18,4 @@ export class MyGame extends Phaser.Game {
     }
 }
 
-let game = new MyGame(); // This kicks everything off
+new MyGame(); // This kicks everything off

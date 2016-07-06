@@ -17,11 +17,12 @@ var gulp = require('gulp'),
     paths = {
         scss_base: 'node_modules/scss-base/src',
         vendor: [
-            'node_modules/phaser/dist/phaser.js',
+            'node_modules/phaser/dist/pixi.js',
+            'node_modules/phaser/dist/p2.js',
+            'node_modules/phaser/dist/phaser-creature.js',
             'node_modules/systemjs/dist/system-polyfills.js',
             'node_modules/systemjs/dist/system.js'
         ],
-        tsConfig: 'src/tsconfig.json',
         ts: 'src/**/*.ts',
         html: 'src/**/*.html',
         images: 'src/assets/images/**/*.*',
@@ -37,7 +38,7 @@ gulp.task('html', () => {
 });
 
 gulp.task('tsc', () => {
-    let tsProject = tsc.createProject(paths.tsConfig);
+    let tsProject = tsc.createProject('tsconfig.json');
     let tsResult = tsProject.src().pipe(tsc(tsProject));
 
     return tsResult.js.pipe(gulp.dest('dist/game/'));
