@@ -9,6 +9,6 @@ export class Menu extends Phaser.State {
 
         this.text = this.add.text(this.world.centerX, 50,
                                   'Main Menu', fontStyle);
-        this.text.anchor.setTo(0.5, 0.5);
+        this.text.anchor.setTo(0.5);
     }
 }

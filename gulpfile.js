@@ -39,7 +39,7 @@ gulp.task('html', () => {
 
 gulp.task('tsc', () => {
     let tsProject = tsc.createProject('tsconfig.json');
-    let tsResult = tsProject.src().pipe(tsc(tsProject));
+    let tsResult = tsProject.src().pipe(tsProject());
 
     return tsResult.js.pipe(gulp.dest('dist/game/'));
 });
