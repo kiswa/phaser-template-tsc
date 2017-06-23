@@ -20,7 +20,7 @@
     "gulp-typescript": "^3.1.7",
     "gulp-uglify": "^3.0.0",
     "merge-stream": "^1.0.1",
-    "phaser": "^2.6.2",
+    "phaser-ce": "^2.8.1",
     "systemjs": "^0.20.14",
     "typescript": "^2.3.4"
   }

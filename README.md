@@ -1,6 +1,6 @@
 # phaser-template-tsc
 
-A simple template project for creating [Phaser](http://phaser.io) games in TypeScript, using Gulp and npm for task running and [SystemJS](https://github.com/systemjs/systemjs) as the module loader.
+A simple template project for creating [Phaser](http://phaser.io) (CE) games in TypeScript, using Gulp and npm for task running and [SystemJS](https://github.com/systemjs/systemjs) as the module loader.
 
 This provides a basic setup to get started on a game. It includes three states (Boot, Loading, and Menu) to demonstrate the initial program flow.
 

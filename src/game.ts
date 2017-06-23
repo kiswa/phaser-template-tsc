@@ -1,4 +1,4 @@
-/// <reference path="../node_modules/phaser/typescript/phaser.d.ts"/>
+/// <reference path="../node_modules/phaser-ce/typescript/phaser.d.ts"/>
 
 import { Boot } from './states/boot';
 import { Loading } from './states/loading';

@@ -17,9 +17,9 @@ var gulp = require('gulp'),
     paths = {
         scss_base: 'node_modules/scss-base/src',
         vendor: [
-            'node_modules/phaser/dist/pixi.js',
-            'node_modules/phaser/dist/p2.js',
-            'node_modules/phaser/dist/phaser-creature.js',
+            'node_modules/phaser-ce/build/custom/pixi.js',
+            'node_modules/phaser-ce/build/custom/p2.js',
+            'node_modules/phaser-ce/build/custom/phaser-creature.js',
             'node_modules/systemjs/dist/system-polyfills.js',
             'node_modules/systemjs/dist/system.js'
         ],
